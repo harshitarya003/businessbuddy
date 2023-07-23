@@ -272,7 +272,7 @@ button.normal
     /* background-color: #fff; */
     padding: 10px;
     box-shadow: #2547cf;
-    border: 0.01px solid #000;
+    border: 0.01px solid #45444470;
     border-radius: 10px;
     cursor: pointer;
 }
@@ -289,7 +289,8 @@ button.normal
 {
     width: 28%;
     height: 650px;
-    margin-bottom: -10px;
+    margin-bottom: 20px;
+    
 }
 #featured h3{
     margin-left: 25px;
@@ -330,7 +331,7 @@ button.normal
 }
 #featured .f-sideB h3 span
 {
-    color: #26a7e7;
+    color: #f1ea24;
 }
 #featured .f-sideB button
 {
@@ -340,11 +341,149 @@ button.normal
 }
 #featured .f-sideB button:hover
 {
-    color: #fff;
-    background-color: #26a7e7;
+    color: none;
+    background-color: #f1ea24;
     transition: 0.5s ease;
 }
-
+/* top-selling */
+#top-selling
+{
+    /* width: 100%; */
+    background-color: #bdbfc9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+#top-selling .tops
+{
+    background-color: #fff;
+    padding: 23px;
+    padding-top:30px;
+}
+#top-selling .tops .card
+{
+    margin: 5px;
+}
+/* suggestion */
+#suggestion
+{
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bdbfc9;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+#suggestion .f-sideB img
+{
+    width: 935px;
+    height: 650px;
+    object-fit: cover;
+    margin-top: -80px;
+    filter: brightness(60%);
+}
+#suggestion .f-sideB h3,button
+{
+    position: absolute;
+    z-index: 100;
+}
+#suggestion .f-sideB h3
+{
+    color: #fff;
+    margin-left: 250px;
+    margin-top: 200px;
+    font-size: 33px;
+}
+#suggestion .f-sideB h3 span
+{
+    color: #bae726;
+}
+#suggestion .f-sideB button
+{
+    margin-left: 425px;
+    margin-top: 275px;
+    font-size: 15px;
+}
+#suggestion .f-sideB button:hover
+{
+    color: #bae726;
+    border: 2px solid #bae726;
+    background-color: #000;
+    transition: 0.5s ease;
+}
+#suggestion .tops
+{
+    background-color: #fff;
+    margin-top: -86px;
+    width: 32.5%;
+    padding: 36px;
+    margin-left: -20px;
+    height: 100%;
+}
+#suggestion .tops .card
+{
+    padding: 10px;
+}
+/* more */
+#more
+{
+    /* width: 100%; */
+    background-color: #bdbfc9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+#more .tops
+{
+    background-color: #fff;
+    padding: 23px;
+    padding-top:30px;
+}
+#more .tops .card
+{
+    margin: 5px;
+}
+#more .more-banner img
+{
+    width: 460px;
+    height: 650px;
+    object-fit: cover;
+    filter: brightness(50%);
+    padding-top: 5px;
+}
+#more .more-banner h3,button
+{
+    position: absolute;
+    z-index: 100;
+}
+#more .more-banner h3
+{
+    color: #fff;
+    margin-left: 50px;
+    margin-top: 350px;
+    font-size: 33px;
+}
+#more .more-banner h3 span
+{
+    color: #f1ea24;
+}
+#more .more-banner button
+{
+    margin-left: 50px;
+    margin-top: 290px;
+    font-size: 15px;
+}
+#more .more-banner button:hover
+{
+    color: #f1ea24;
+    border: 2px solid #f1ea24;
+    background-color: #000;
+    transition: 0.5s ease;
+}
 /* newsletter */
 #newsletter
 {
@@ -357,6 +496,7 @@ button.normal
     background-position: 20% 30%;
     background-color: #041e42;
     height: 200px;
+    margin-top: 10px;
     /* width: 98%;
     margin-left: 15px; */
 }
