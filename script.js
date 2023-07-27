@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const sidenavs = document.querySelectorAll(".slide-nav .indicator");
     sidenavs.forEach((sidenav) => {
       sidenav.addEventListener("mouseleave", function () {
-        interval = setInterval(showNextImage, 2000);
+        interval = setInterval(showNextImage, 2000);  
       });
     });
   });
