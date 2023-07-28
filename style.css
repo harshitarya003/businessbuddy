@@ -9,6 +9,13 @@
     /* background-color: #fff; */
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
 body {
     background-color: #bdbfc9;
 }
@@ -471,7 +478,7 @@ button {
 }
 
 #more .more-banner h3,
-button {
+#more .more-banner button {
     position: absolute;
     z-index: 100;
 }
@@ -791,13 +798,13 @@ footer .copyright {
 
 /* product */
 #product {
-    height: 1000px;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     background-color: #fff;
-    margin: 10px 0px 20px 0px;
+    margin: 10px 0px 10px 0px;
     padding: 20px;
     /* position: relative; */
 }
@@ -876,13 +883,13 @@ footer .copyright {
 
 #product .product-right .product-offers
 {
-    margin-top: 20px;
+    margin-top: 25px;
 }
 
 #product .product-right .product-offers h6
 {
     margin-bottom: 10px;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #product .product-right .product-offers .offer
@@ -903,18 +910,217 @@ footer .copyright {
 #product .product-right .product-offers .offer h5
 {
     color: #323131;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 400px;
 }
 
 #product .product-right .product-offers .offer strong
 {
-    font-size: 12px;
-    color: #4100f4f3;
+    font-size: 13px;
+    /* color: #4100f4f3; */
+    color: #000;
     font-weight: 700px;
 }
 
-#product .product-right .product-buttons
+#product .product-left .product-buttons
 {
-    
+    width: 100%;
+    /* align-items: center; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#product .product-left .product-buttons button 
+{
+    position: relative;
+    height: 60px;
+    background-color: #ff9f00;
+    color: #fff;
+    margin-top: 10px;
+    width: 49%;
+    font-size: 15px;
+}
+
+#product .product-left .product-buttons button.buy-now
+{
+    background-color: #fb641b;
+}
+
+#product .product-delivery
+{
+    margin-top: 25px;
+}
+
+#product .product-delivery h6
+{
+    font-size: 16px;
+}
+
+#product .product-delivery img
+{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 8px;
+    left: 0px;
+    padding-right: 2px;
+}
+
+#product .product-delivery .pincode 
+{
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    position: relative;
+    width: 30%;
+}
+
+#product .product-delivery h6.check
+{
+    position: absolute;
+    font-size: 13px;
+    right: 0;
+    bottom: 8px;
+    color: #0033ff;
+    cursor: pointer;
+}
+
+#product .product-delivery .pincode input
+{
+    border: none;
+    border-bottom: 2px solid #0033ff;
+    width: 100%;
+    margin-left: 2px;
+    height: 40px;
+    text-align: start;
+    padding-left: 20px;
+}
+
+#product .product-delivery p
+{
+    margin-top: 10px;
+    color: #3b7b0a;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+#product .product-delivery p strong
+{
+    color: #000;
+    font-size: 12px;
+}
+
+#product .product-delivery p.delivery-details
+{
+    width: 32%;
+    font-size: 13px;
+    color: #635f5fde;
+    font-weight: 300;
+}
+
+#details 
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+}
+
+#details .specifications 
+{
+    background-color: #fff;
+    width: 49.7%;
+    text-align: center;
+    align-items: center;
+    border: 1px solid #90919750;
+}
+
+#details .detail-section h6
+{
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#details hr
+{
+    border: 1px solid #90919750;
+}
+
+#details .detail-section table 
+{
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#details .detail-section table tr
+{
+    margin: 0px 0;
+}
+
+#details .detail-section table td
+{
+    padding: 5px 35px;
+    font-size: 14px;
+    text-align: left;
+}
+
+#details .detail-section table td.heading
+{
+    font-size: 14px;
+    color: #8b8383;
+    font-weight: 350;
+    padding-left: 20px;
+}
+
+#details .product-details 
+{
+    background-color: #fff;
+    width: 49.7%;
+    text-align: center;
+    /* display: none; */
+}
+
+#details .product-details h6 {
+    text-align: left;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 400;
+    /* margin-top: 20px; */
+}
+
+#details .product-details .description, .dimensions
+{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#details .product-details .description p.desc , .dimensions p.desc
+{
+    font-size: 13.5px;
+    text-align: left;
+    color: #000;
+    margin-left: 20px;
+    text-align: left;
+}
+
+#details .product-details .dimensions p.desc
+{
+    font-size: 15px;
+    margin-bottom: 14px;
+    gap: 10px;
+    margin-right: 150px;
+}
+
+#details .dimensions .col
+{
+    display: flex;
+    flex-direction: column;
 }
